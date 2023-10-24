@@ -1,11 +1,10 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import { Table, Button } from "react-bootstrap";
-import CreateModal from "./create.modal";
-import UpdateModal from "./update.modal";
+import CreateModal from "./post.create";
+import UpdateModal from "./post.update";
 import Link from "next/link";
 import { toast } from "react-toastify";
-import { mutate } from "swr";
 
 interface IProps {
     blogs: IBlog[];
@@ -59,7 +58,7 @@ const AppTable = (props: IProps) => {
                         <th>Title</th>
                         <th>Category</th>
                         <th>Author</th>
-                        <th>Image</th> {/* Add this header for the image column */}
+                        <th>Image</th>
                         <th>Action</th>
                     </tr>
                 </thead>

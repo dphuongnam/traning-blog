@@ -24,10 +24,8 @@ export default function AdminPanel() {
     }, []);
 
     return (
-        <div className='post-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Sidebar />
-            <CategoryTableView />
-        </div>
-
+        <>
+            {isLoggedIn && <CategoryTableView />}
+        </>
     )
 }

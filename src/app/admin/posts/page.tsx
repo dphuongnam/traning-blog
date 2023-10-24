@@ -1,6 +1,5 @@
 'use client'
 
-import Sidebar from '../sidebar';
 import BlogsPost from '../blogs';
 import { useEffect } from 'react';
 import Cookies from 'js-cookie';
@@ -23,10 +22,9 @@ export default function AdminPanel() {
     }, []);
 
     return (
-        <div className='post-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Sidebar />
-            <BlogsPost />
-        </div>
+        <>
+            {isLoggedIn && <BlogsPost />}
+        </>
 
     )
 }
