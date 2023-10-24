@@ -1,0 +1,25 @@
+.red {
+    color: red;
+    border: 1px solid red;
+}
+
+.green {
+    color: green;
+    border: 1px solid green;
+}
+
+.footer {
+    text-align: center;
+    background: #cecece;
+}
+
+.side-bar {
+    width: 15%;
+    background: whitesmoke;
+}
+
+.category-show {
+    border-radius: 50px;
+    background-color: rgb(243, 243, 243);
+    margin-right: 10px;
+}
